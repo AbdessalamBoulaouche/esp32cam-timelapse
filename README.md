@@ -1,4 +1,4 @@
-# esp32cam-timelapse
+# ESP32-CAM Timelapse
 
 [Demo Site](https://garden.muffalings.com/)
 
