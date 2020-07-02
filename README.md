@@ -1,5 +1,7 @@
 # esp32cam-timelapse
 
+[Demo Site](https://garden.muffalings.com/)
+
 ## Overview
 
 This repo contains template files to use to set up an ESP32-CAM to take a picture with a set frequency, upload it to a server, compile the captured images into a timelapse movie, and then host it via a webserver. The files in this repo will not work as-is and will need to be customized depending on your deployment environment. Specifically, the four components of this repo are: 
@@ -25,7 +27,7 @@ The included sketch can be found in the `esp32-src` folder and is named `timelap
 
 ## Upload Server
 
-This is a server to handle the incoming images coming from the ESP32-CAM. The php code to do this can be found in the `server-upload` folder at `upload_pic.php`. In my environment, I use dockerized nginx as a webserver, and have this php in the server root directory. There are two variables you will want to change to fit your own implementation.
+This is server-side code to handle the incoming images coming from the ESP32-CAM. The php code to do this can be found in the `server-upload` folder at `upload_pic.php`. In my environment, I use dockerized nginx as a webserver, and have this php in the server root directory. There are two variables you will want to change to fit your own implementation.
 
 1. `$upload_path` is the folder that will store all the uploaded images.
 2. `$latest_path` is the path at which the most recent image taken by the ESP32-CAM will be saved. This image will be overwritten as each new image is uploaded.
