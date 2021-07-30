@@ -1,6 +1,6 @@
 # ESP32-CAM Timelapse
 
-[Demo Site](https://garden.muffalings.com/)
+~~[Demo Site](https://garden.muffalings.com/)~~ (Deprecated)
 
 ## Overview
 
